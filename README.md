@@ -2,6 +2,8 @@
 
 Bun-first CLI that scans a repository and tells you whether it looks ready to build, test, publish, or deploy.
 
+**Website:** https://repo-doctor-one.vercel.app
+
 - Zero runtime dependencies
 - Single small binary, designed for terminals and CI
 - Bun-only — uses `Bun.argv`, `Bun.file`, `Bun.spawn`, and `bun test`

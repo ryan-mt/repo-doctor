@@ -40,7 +40,7 @@
   "bugs": {
     "url": "https://github.com/ryan-mt/repo-doctor/issues"
   },
-  "homepage": "https://github.com/ryan-mt/repo-doctor#readme",
+  "homepage": "https://repo-doctor-one.vercel.app",
   "publishConfig": {
     "access": "public"
   },
