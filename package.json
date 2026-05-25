@@ -4,7 +4,7 @@
   "description": "Bun-first CLI that scans a repository and reports whether it is ready to build, test, publish, or deploy.",
   "type": "module",
   "bin": {
-    "repo-doctor": "./dist/cli.js"
+    "repo-doctor": "dist/cli.js"
   },
   "files": [
     "dist",
