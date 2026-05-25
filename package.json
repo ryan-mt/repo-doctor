@@ -1,0 +1,51 @@
+{
+  "name": "repo-doctor",
+  "version": "0.1.0",
+  "description": "Bun-first CLI that scans a repository and reports whether it is ready to build, test, publish, or deploy.",
+  "type": "module",
+  "bin": {
+    "repo-doctor": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bun build src/cli.ts --target=bun --outdir=dist --minify",
+    "start": "bun run src/cli.ts",
+    "test": "bun test",
+    "typecheck": "bun x tsc --noEmit",
+    "prepublishOnly": "bun run build"
+  },
+  "engines": {
+    "bun": ">=1.1.0"
+  },
+  "keywords": [
+    "cli",
+    "repo",
+    "doctor",
+    "scan",
+    "ci",
+    "bun",
+    "bunx",
+    "readiness",
+    "audit"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryan-mt/repo-doctor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryan-mt/repo-doctor/issues"
+  },
+  "homepage": "https://github.com/ryan-mt/repo-doctor#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.5.0"
+  }
+}
